@@ -15,7 +15,7 @@ final class BusinessDataService {
     
     func fetchData<T: Decodable>(nearby address: String, businessType: String,
                                  onComplete: @escaping (Result<T, BusinessDataService.NetworkError>) -> Void) -> Void {
-        let endpoint = "\(ApiConstants.Endpoint.baseSearch)?\(ApiConstants.Endpoint.addAddress(address.urlEncoded))&\(ApiConstants.Endpoint.addBusinessType(businessType.urlEncoded))&\(ApiConstants.Endpoint.defaultRadiusAndBatchLimit)"
+        let endpoint = "\(YelpAPIConstants.YelpAPIEndpoint.searchEndpointBaseURL)?\(YelpAPIConstants.YelpAPIEndpoint.locationSearchQueryParameter(address.urlEncoded))&\(YelpAPIConstants.YelpAPIEndpoint.businessTypeSearchQueryParameter(businessType.urlEncoded))&\(YelpAPIConstants.YelpAPIEndpoint.defaultSearchRadiusAndBatchLimitQueryParameter)"
         
         guard let url = URL(string: endpoint) else {
             onComplete(.failure(.invalidInputs))
@@ -25,7 +25,7 @@ final class BusinessDataService {
         var request = URLRequest(url: url, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 10.0)
         let headers = [
             "accept": "application/json",
-            "Authorization": ApiConstants.authString
+            "Authorization": YelpAPIConstants.yelpAPIAuthorizationString
         ]
         request.allHTTPHeaderFields = headers
         request.httpMethod = "GET"
@@ -60,7 +60,7 @@ final class BusinessDataService {
     
     
     func fetchData<T: Decodable>(with id: String, onComplete: @escaping (Result<T, BusinessDataService.NetworkError>) -> Void) -> Void {
-        let endpoint = "\(ApiConstants.Endpoint.baseGetById)\(id)"
+        let endpoint = "\(YelpAPIConstants.YelpAPIEndpoint.getBusinessByIDEndpointBaseURL)\(id)"
         
         guard let url = URL(string: endpoint) else {
             onComplete(.failure(.invalidInputs))
@@ -70,7 +70,7 @@ final class BusinessDataService {
         var request = URLRequest(url: url, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 10.0)
         let headers = [
             "accept": "application/json",
-            "Authorization": ApiConstants.authString
+            "Authorization": YelpAPIConstants.yelpAPIAuthorizationString
         ]
         request.allHTTPHeaderFields = headers
         request.httpMethod = "GET"
@@ -106,14 +106,14 @@ final class BusinessDataService {
     
     @available(iOS 15.0, *)
     func fetchData<T: Decodable>(with id: String) async throws -> T {
-        let endpoint = "\(ApiConstants.Endpoint.baseGetById)\(id)"
+        let endpoint = "\(YelpAPIConstants.YelpAPIEndpoint.getBusinessByIDEndpointBaseURL)\(id)"
         
         guard let url = URL(string: endpoint) else { throw NetworkError.invalidInputs }
 
         var request = URLRequest(url: url, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 10.0)
         let headers = [
             "accept": "application/json",
-            "Authorization": ApiConstants.authString
+            "Authorization": YelpAPIConstants.yelpAPIAuthorizationString
         ]
         request.allHTTPHeaderFields = headers
         request.httpMethod = "GET"
@@ -131,14 +131,14 @@ final class BusinessDataService {
     
     @available(iOS 15.0, *)
     func fetchData<T: Decodable>(nearby address: String, businessType: String) async throws -> T {
-        let endpoint = "\(ApiConstants.Endpoint.baseSearch)?\(ApiConstants.Endpoint.addAddress(address.urlEncoded))&\(ApiConstants.Endpoint.addBusinessType(businessType.urlEncoded))&\(ApiConstants.Endpoint.defaultRadiusAndBatchLimit)"
+        let endpoint = "\(YelpAPIConstants.YelpAPIEndpoint.searchEndpointBaseURL)?\(YelpAPIConstants.YelpAPIEndpoint.locationSearchQueryParameter(address.urlEncoded))&\(YelpAPIConstants.YelpAPIEndpoint.businessTypeSearchQueryParameter(businessType.urlEncoded))&\(YelpAPIConstants.YelpAPIEndpoint.defaultSearchRadiusAndBatchLimitQueryParameter)"
         
         guard let url = URL(string: endpoint) else { throw NetworkError.invalidInputs }
 
         var request = URLRequest(url: url, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 10.0)
         let headers = [
             "accept": "application/json",
-            "Authorization": ApiConstants.authString
+            "Authorization": YelpAPIConstants.yelpAPIAuthorizationString
         ]
         request.allHTTPHeaderFields = headers
         request.httpMethod = "GET"
@@ -157,9 +157,9 @@ final class BusinessDataService {
 
 extension BusinessDataService {
     internal enum NetworkError: String, Error {
-        case invalidInputs = "Your request contains invalid inputs. Please try again."
-        case unableToComplete = "Unable to complete your request. Please check your internet connection and try again."
-        case invalidResponse = "The server sent an invalid response. Please try again later."
-        case invalidData = "Invalid data received from server. Please try again later."
+        case invalidInputs = "Sua solicitação contém entradas inválidas. Por favor, tente novamente."
+        case unableToComplete = "Não é possível completar sua solicitação. Por favor, verifique sua conexão com a internet e tente novamente."
+        case invalidResponse = "O servidor enviou uma resposta inválida. Por favor, tente novamente mais tarde."
+        case invalidData = "Dados inválidos recebidos do servidor. Por favor, tente novamente mais tarde."
     }
 }

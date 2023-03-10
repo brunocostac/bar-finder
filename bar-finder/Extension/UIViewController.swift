@@ -39,7 +39,7 @@ extension UIViewController {
         childController.view.frame = containerView.bounds
     }
     
-    func presentCustomAlert(title: String = "Something bad happened",
+    func presentCustomAlert(title: String = "Algo deu errado",
                       message: String,
                       buttonTitle: String = "OK") {
         

@@ -48,7 +48,7 @@
 		11DB6585299C1B6E0066FAE1 /* BFPrimaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB6584299C1B6E0066FAE1 /* BFPrimaryTitleLabel.swift */; };
 		11DB6587299C1BEB0066FAE1 /* BFSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB6586299C1BEB0066FAE1 /* BFSecondaryTitleLabel.swift */; };
 		11DB6589299C24C40066FAE1 /* BusinessDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB6588299C24C40066FAE1 /* BusinessDataService.swift */; };
-		11DB658B299C24F50066FAE1 /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB658A299C24F50066FAE1 /* ApiConstants.swift */; };
+		11DB658B299C24F50066FAE1 /* YelpAPIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB658A299C24F50066FAE1 /* YelpAPIConstants.swift */; };
 		11DB658D299C268D0066FAE1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB658C299C268D0066FAE1 /* String.swift */; };
 		11DB658F299C2B1C0066FAE1 /* BFAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB658E299C2B1C0066FAE1 /* BFAlert.swift */; };
 		11DB6591299C2C000066FAE1 /* BFAlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB6590299C2C000066FAE1 /* BFAlertContainerView.swift */; };
@@ -118,7 +118,7 @@
 		11DB6584299C1B6E0066FAE1 /* BFPrimaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFPrimaryTitleLabel.swift; sourceTree = "<group>"; };
 		11DB6586299C1BEB0066FAE1 /* BFSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFSecondaryTitleLabel.swift; sourceTree = "<group>"; };
 		11DB6588299C24C40066FAE1 /* BusinessDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDataService.swift; sourceTree = "<group>"; };
-		11DB658A299C24F50066FAE1 /* ApiConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
+		11DB658A299C24F50066FAE1 /* YelpAPIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpAPIConstants.swift; sourceTree = "<group>"; };
 		11DB658C299C268D0066FAE1 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		11DB658E299C2B1C0066FAE1 /* BFAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFAlert.swift; sourceTree = "<group>"; };
 		11DB6590299C2C000066FAE1 /* BFAlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFAlertContainerView.swift; sourceTree = "<group>"; };
@@ -267,7 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				11DB6588299C24C40066FAE1 /* BusinessDataService.swift */,
-				11DB658A299C24F50066FAE1 /* ApiConstants.swift */,
+				11DB658A299C24F50066FAE1 /* YelpAPIConstants.swift */,
 				115A60D1299EBE2600748EDA /* ImageDataService.swift */,
 			);
 			path = Services;
@@ -472,7 +472,7 @@
 				117DF91E299D12CF0076CA24 /* BFEmptyStateView.swift in Sources */,
 				11DB6581299C187A0066FAE1 /* UIView.swift in Sources */,
 				1193076B299AC17800C2B6F7 /* UIViewController.swift in Sources */,
-				11DB658B299C24F50066FAE1 /* ApiConstants.swift in Sources */,
+				11DB658B299C24F50066FAE1 /* YelpAPIConstants.swift in Sources */,
 				11DB657C299BEFDD0066FAE1 /* BusinessInformationDetailsViewController.swift in Sources */,
 				117DF916299D08140076CA24 /* UIHelper.swift in Sources */,
 				117DF918299D0CCB0076CA24 /* BusinessCell.swift in Sources */,
