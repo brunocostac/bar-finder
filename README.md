@@ -13,4 +13,5 @@ Aplicativo para dispositivo iOS (Swift) que consome o JSON exposto pela API do Y
 ## Especificações de desenvolvimento
 
 * Arquitetura utilizada: MVC
-* Desenvolimento de telas com ViewCode
+* Desenvolvimento de telas com ViewCode
+* Armazenamento local com CoreData
