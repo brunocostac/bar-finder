@@ -9,18 +9,7 @@ import UIKit
 
 class SearchViewController: UIViewController {
     
-    private let backgroundImageView: UIImageView = .init()
     private let logoImageView: UIImageView = .init()
-    
-    private let titleLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Bar Finder"
-        label.font = UIFont.boldSystemFont(ofSize: 36)
-        label.textColor = .white
-        label.textAlignment = .center
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
     
     private let locationTextField: BFTextField = .init(withPlaceholder: "Qual é a sua localização?", imagePlaceHolder: BFImages.location)
     private let businessTypeTextField: BFTextField = .init(withPlaceholder: "Pizza, cerveja, hamburger...", imagePlaceHolder: BFImages.businessType)
@@ -44,12 +33,6 @@ class SearchViewController: UIViewController {
     
     
     
-    func setupBackgroundImageViewConstraints() {
-        backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
-        backgroundImageView.pinToSuperviewEdges()
-    }
-    
-    
     func setupLogoViewConstraints() {
         logoImageView.translatesAutoresizingMaskIntoConstraints = false
     
@@ -61,20 +44,12 @@ class SearchViewController: UIViewController {
         ])
     }
     
-    func setupTitleLabelConstraints() {
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([
-            titleLabel.bottomAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 0),
-            titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor)
-        ])
-    }
+   
     
     private func setupTextFieldsConstraints() {
         
         NSLayoutConstraint.activate([
-            locationTextField.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 48),
+            locationTextField.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 0),
             locationTextField.heightAnchor.constraint(equalToConstant: 44),
             locationTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 32),
             locationTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -32),
@@ -101,23 +76,19 @@ class SearchViewController: UIViewController {
 
 extension SearchViewController: ViewConfiguration {
     func setupConstraints() {
-        setupBackgroundImageViewConstraints()
         setupLogoViewConstraints()
-        setupTitleLabelConstraints()
         setupTextFieldsConstraints()
         setupSearchButtonConstraints()
     }
     
     func buildViewHierarchy() {
-        view.addSubview(backgroundImageView)
         view.addSubview(logoImageView)
-        view.addSubview(titleLabel)
         view.addSubviewsAndDisableAutoresizingMask(locationTextField, businessTypeTextField)
         view.addSubview(searchButton)
     }
     
     func configureViews() {
-        backgroundImageView.image = BFImages.background
+        view.backgroundColor = UIColor(red: 0.98, green: 0.39, blue: 0.25, alpha: 1.0)
         logoImageView.image = BFImages.bfLogo
         locationTextField.delegate = self
         businessTypeTextField.delegate = self

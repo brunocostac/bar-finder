@@ -63,7 +63,6 @@ extension BFTextField: ViewConfiguration {
         layer.cornerRadius = 8
         layer.borderWidth = 1
         layer.borderColor = UIColor.systemGray4.cgColor
-        
         textColor = .label
         tintColor = .label
         textAlignment = .center
@@ -79,6 +78,6 @@ extension BFTextField: ViewConfiguration {
         returnKeyType = .go
         clearButtonMode = .whileEditing
     
-        imageView.tintColor = UIColor.red
+        imageView.tintColor = UIColor(red: 0.98, green: 0.39, blue: 0.25, alpha: 1.0)
     }
 }
