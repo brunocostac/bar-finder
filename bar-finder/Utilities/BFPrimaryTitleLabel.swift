@@ -34,8 +34,5 @@ extension BFPrimaryTitleLabel: ViewConfiguration {
     func configureViews() {
         disableAutoresizingMaskTranslation()
         textColor = .gray
-        //adjustsFontSizeToFitWidth = true
-       // minimumScaleFactor = 0.9
-       // lineBreakMode = .byTruncatingTail
     }
 }

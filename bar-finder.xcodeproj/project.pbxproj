@@ -23,8 +23,6 @@
 		118FC95D299533C700E7A69C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 118FC95C299533C700E7A69C /* Assets.xcassets */; };
 		118FC960299533C700E7A69C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 118FC95E299533C700E7A69C /* LaunchScreen.storyboard */; };
 		118FC96B299533C800E7A69C /* FavoriteManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FC96A299533C800E7A69C /* FavoriteManagerTests.swift */; };
-		118FC975299533C900E7A69C /* bar_finderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FC974299533C900E7A69C /* bar_finderUITests.swift */; };
-		118FC977299533C900E7A69C /* bar_finderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FC976299533C900E7A69C /* bar_finderUITestsLaunchTests.swift */; };
 		118FC989299535D600E7A69C /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FC988299535D600E7A69C /* Business.swift */; };
 		118FC98B299540B100E7A69C /* CoreDataTestStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FC98A299540B100E7A69C /* CoreDataTestStack.swift */; };
 		118FC98D2995425E00E7A69C /* FavoriteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FC98C2995425E00E7A69C /* FavoriteManager.swift */; };
@@ -63,13 +61,6 @@
 			remoteGlobalIDString = 118FC94C299533BE00E7A69C;
 			remoteInfo = "bar-finder";
 		};
-		118FC971299533C900E7A69C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 118FC945299533BE00E7A69C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 118FC94C299533BE00E7A69C;
-			remoteInfo = "bar-finder";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -92,7 +83,6 @@
 		118FC961299533C700E7A69C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		118FC966299533C800E7A69C /* bar-finderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bar-finderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		118FC96A299533C800E7A69C /* FavoriteManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteManagerTests.swift; sourceTree = "<group>"; };
-		118FC970299533C800E7A69C /* bar-finderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bar-finderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		118FC974299533C900E7A69C /* bar_finderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bar_finderUITests.swift; sourceTree = "<group>"; };
 		118FC976299533C900E7A69C /* bar_finderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bar_finderUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		118FC988299535D600E7A69C /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
@@ -134,13 +124,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		118FC963299533C800E7A69C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		118FC96D299533C800E7A69C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -200,7 +183,6 @@
 			children = (
 				118FC94D299533BE00E7A69C /* bar-finder.app */,
 				118FC966299533C800E7A69C /* bar-finderTests.xctest */,
-				118FC970299533C800E7A69C /* bar-finderUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -372,24 +354,6 @@
 			productReference = 118FC966299533C800E7A69C /* bar-finderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		118FC96F299533C800E7A69C /* bar-finderUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 118FC980299533C900E7A69C /* Build configuration list for PBXNativeTarget "bar-finderUITests" */;
-			buildPhases = (
-				118FC96C299533C800E7A69C /* Sources */,
-				118FC96D299533C800E7A69C /* Frameworks */,
-				118FC96E299533C800E7A69C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				118FC972299533C900E7A69C /* PBXTargetDependency */,
-			);
-			name = "bar-finderUITests";
-			productName = "bar-finderUITests";
-			productReference = 118FC970299533C800E7A69C /* bar-finderUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -404,10 +368,6 @@
 						CreatedOnToolsVersion = 14.2;
 					};
 					118FC965299533C800E7A69C = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 118FC94C299533BE00E7A69C;
-					};
-					118FC96F299533C800E7A69C = {
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = 118FC94C299533BE00E7A69C;
 					};
@@ -428,7 +388,6 @@
 			targets = (
 				118FC94C299533BE00E7A69C /* bar-finder */,
 				118FC965299533C800E7A69C /* bar-finderTests */,
-				118FC96F299533C800E7A69C /* bar-finderUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -444,13 +403,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		118FC964299533C800E7A69C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		118FC96E299533C800E7A69C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -516,15 +468,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		118FC96C299533C800E7A69C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				118FC977299533C900E7A69C /* bar_finderUITestsLaunchTests.swift in Sources */,
-				118FC975299533C900E7A69C /* bar_finderUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -532,11 +475,6 @@
 			isa = PBXTargetDependency;
 			target = 118FC94C299533BE00E7A69C /* bar-finder */;
 			targetProxy = 118FC967299533C800E7A69C /* PBXContainerItemProxy */;
-		};
-		118FC972299533C900E7A69C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 118FC94C299533BE00E7A69C /* bar-finder */;
-			targetProxy = 118FC971299533C900E7A69C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -764,42 +702,6 @@
 			};
 			name = Release;
 		};
-		118FC981299533C900E7A69C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = S5RL328K3W;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.brunocosta.bar-finderUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "bar-finder";
-			};
-			name = Debug;
-		};
-		118FC982299533C900E7A69C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = S5RL328K3W;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.brunocosta.bar-finderUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "bar-finder";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -826,15 +728,6 @@
 			buildConfigurations = (
 				118FC97E299533C900E7A69C /* Debug */,
 				118FC97F299533C900E7A69C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		118FC980299533C900E7A69C /* Build configuration list for PBXNativeTarget "bar-finderUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				118FC981299533C900E7A69C /* Debug */,
-				118FC982299533C900E7A69C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
