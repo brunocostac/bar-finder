@@ -21,6 +21,7 @@ class FavoriteListViewControllerTests: XCTestCase {
         coreDataStack = CoreDataTestStack()
         mockFavoriteManager = MockFavoriteManager(persistentContainer: coreDataStack.persistentContainer)
         sut = FavoriteListViewController()
+        sut.tableView.register(FavoriteListCell.self, forCellReuseIdentifier: "FavoriteListCell")
         sut.favoriteManager = mockFavoriteManager
         
         // Create some sample Favorite objects for testing
