@@ -51,6 +51,8 @@
 		11DB658F299C2B1C0066FAE1 /* BFAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB658E299C2B1C0066FAE1 /* BFAlert.swift */; };
 		11DB6591299C2C000066FAE1 /* BFAlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB6590299C2C000066FAE1 /* BFAlertContainerView.swift */; };
 		11DB6593299C30550066FAE1 /* BusinessListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB6592299C30550066FAE1 /* BusinessListViewController.swift */; };
+		11EEABA929CD0C8500268ACF /* FavoriteViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EEABA829CD0C8500268ACF /* FavoriteViewControllerTests.swift */; };
+		11EEABB029CD165400268ACF /* MockFavoriteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EEABAF29CD165400268ACF /* MockFavoriteManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +115,8 @@
 		11DB658E299C2B1C0066FAE1 /* BFAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFAlert.swift; sourceTree = "<group>"; };
 		11DB6590299C2C000066FAE1 /* BFAlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFAlertContainerView.swift; sourceTree = "<group>"; };
 		11DB6592299C30550066FAE1 /* BusinessListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessListViewController.swift; sourceTree = "<group>"; };
+		11EEABA829CD0C8500268ACF /* FavoriteViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewControllerTests.swift; sourceTree = "<group>"; };
+		11EEABAF29CD165400268ACF /* MockFavoriteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFavoriteManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +216,8 @@
 			children = (
 				118FC96A299533C800E7A69C /* FavoriteManagerTests.swift */,
 				118FC98A299540B100E7A69C /* CoreDataTestStack.swift */,
+				11EEABA829CD0C8500268ACF /* FavoriteViewControllerTests.swift */,
+				11EEABAF29CD165400268ACF /* MockFavoriteManager.swift */,
 			);
 			path = "bar-finderTests";
 			sourceTree = "<group>";
@@ -464,6 +470,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				118FC96B299533C800E7A69C /* FavoriteManagerTests.swift in Sources */,
+				11EEABB029CD165400268ACF /* MockFavoriteManager.swift in Sources */,
+				11EEABA929CD0C8500268ACF /* FavoriteViewControllerTests.swift in Sources */,
 				118FC98B299540B100E7A69C /* CoreDataTestStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -614,6 +622,7 @@
 				DEVELOPMENT_TEAM = S5RL328K3W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "bar-finder/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bar Finder";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
@@ -643,6 +652,7 @@
 				DEVELOPMENT_TEAM = S5RL328K3W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "bar-finder/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bar Finder";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;

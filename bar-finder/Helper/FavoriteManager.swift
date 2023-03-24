@@ -8,7 +8,14 @@
 import Foundation
 import CoreData
 
-struct FavoriteManager {
+protocol FavoriteManagerProtocol {
+    func save(business: Business)
+    func fetch(withId id: String) -> Favorite?
+    func fetchAll() -> [Favorite]?
+    func remove(withId id: String)
+}
+
+struct FavoriteManager: FavoriteManagerProtocol {
     let mainContext: NSManagedObjectContext
 
     init(mainContext: NSManagedObjectContext = CoreDataStack.shared.mainContext) {

@@ -9,10 +9,11 @@ import UIKit
 
 class FavoriteListViewController: UIViewController {
     
-    private var allFavorites: [Favorite] = []
+    var allFavorites: [Favorite] = []
     private var business: Business?
-    private var tableView: UITableView!
-   
+    var tableView = UITableView()
+    var favoriteManager: FavoriteManagerProtocol?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
@@ -22,13 +23,13 @@ class FavoriteListViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        self.favoriteManager = FavoriteManager()
         self.fetchFavorites()
         self.setupEmptyStateView()
     }
     
     func fetchFavorites() {
-        let favoriteManager = FavoriteManager()
-        self.allFavorites = favoriteManager.fetchAll()!
+        self.allFavorites = (favoriteManager?.fetchAll())!
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
