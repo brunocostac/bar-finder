@@ -45,7 +45,6 @@ class FavoriteListViewControllerTests: XCTestCase {
         sut = nil
         mockFavoriteManager = nil
         coreDataStack = nil
-        sampleFavorites = []
         super.tearDown()
     }
     
@@ -56,5 +55,26 @@ class FavoriteListViewControllerTests: XCTestCase {
         
         // Then
         XCTAssertEqual(numberOfRows, sut.allFavorites.count)
+    }
+    
+    // Test that the table view cell is configured correctly
+    func testCellForRowAtIndexPath() {
+        // Given
+        let favorite1 = Favorite(context: coreDataStack.mainContext)
+        favorite1.id = "1"
+        favorite1.name = "Restaurant A"
+        favorite1.imageURL = "https://example.com/image1.jpg"
+        favorite1.rating = 4.5
+        favorite1.category = "Italian"
+        
+        let indexPath = IndexPath(row: 0, section: 0)
+        sut.allFavorites = [favorite1]
+        
+        // When
+        let cell = sut.tableView(sut.tableView, cellForRowAt: indexPath) as! FavoriteListCell
+        
+        // Then
+        XCTAssertEqual(cell.nameLabel.text, favorite1.name)
+        XCTAssertEqual(cell.ratingLabel.text, "\(favorite1.rating)")
     }
 }

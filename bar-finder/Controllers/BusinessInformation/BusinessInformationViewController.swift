@@ -16,7 +16,7 @@ class BusinessInformationViewController: UIViewController, LoadableScreen {
     
     var containerView: UIView!
  
-    private var business: Business!
+    var business: Business!
     private var searchedLocation: String = .init()
 
     private var scrollView: UIScrollView = .init()

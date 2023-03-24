@@ -13,9 +13,9 @@ final class FavoriteListCell: UITableViewCell {
     static let reuseIdentifier = "FavoriteListCell"
     
     private let profileImageView: BFProfileImageView = .init(frame: .zero)
-    private let nameLabel: BFPrimaryTitleLabel = .init(textAlignment: .left, ofSize: 17)
+    let nameLabel: BFPrimaryTitleLabel = .init(textAlignment: .left, ofSize: 17)
     private let ratingIcon: UIImageView = .init()
-    private let ratingLabel: BFLabel = .init(textAlignment: .left)
+    let ratingLabel: BFLabel = .init(textAlignment: .left)
     private let tagIcon: UIImageView = .init()
     private let tagLabel: BFLabel = .init(textAlignment: .left)
     
