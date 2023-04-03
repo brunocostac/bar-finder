@@ -16,7 +16,13 @@ class BusinessInformationViewController: UIViewController, LoadableScreen {
     
     var containerView: UIView!
  
-    var business: Business!
+    var business: Business! {
+        didSet {
+            title = business.name
+            self.setupChildControllers()
+            self.checkIsFavorite(business: self.business)
+        }
+    }
     private var searchedLocation: String = .init()
 
     private var scrollView: UIScrollView = .init()
@@ -34,19 +40,37 @@ class BusinessInformationViewController: UIViewController, LoadableScreen {
     
     weak var delegate: BusinessInformationViewControllerDelegate?
     
-    init(for business: Business, near location: String = NSLocalizedString("searched location", comment: "The default distance-from location info of a business")) {
+    init(for business: Business?, with id: String?, near location: String = NSLocalizedString("searched location", comment: "The default distance-from location info of a business")) {
         super.init(nibName: nil, bundle: nil)
-        self.business = business
+        
+        if business != nil {
+            self.business = business
+        } else {
+            self.fetchBusinessData(with: id!)
+        }
         self.searchedLocation = location
-        self.checkIsFavorite(business: business)
     }
     
-    required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    
+    func fetchBusinessData(with id: String) {
+        Task {
+            do {
+                self.business = try await BusinessDataService.shared.fetchData(with: id)
+            } catch let error as BusinessDataService.NetworkError {
+                presentCustomAlert(message: error.rawValue)
+            } catch {
+                presentDefaultNetworkErrorAlert()
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupViewConfiguration()
-        self.setupChildControllers()
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -72,7 +96,6 @@ extension BusinessInformationViewController: ViewConfiguration {
     
     func configureViews() {
         view.backgroundColor = .systemBackground
-        title = business.name
         setupNavigationBarButtons()
     }
 }

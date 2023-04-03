@@ -12,7 +12,7 @@ class FavoriteListViewController: UIViewController {
     var allFavorites: [Favorite] = []
     private var business: Business?
     var tableView = UITableView()
-    var favoriteManager: FavoriteManagerProtocol?
+    var favoriteManager: FavoriteManagerProtocol!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,26 +44,16 @@ class FavoriteListViewController: UIViewController {
         self.tableView.register(FavoriteListCell.self, forCellReuseIdentifier: FavoriteListCell.reuseIdentifier)
     }
     
-    func fetchBusinessData(with id: String) {
-        Task {
-            do {
-                self.business = try await BusinessDataService.shared.fetchData(with: id)
-                self.presentBusinessInformationViewController()
-            } catch let error as BusinessDataService.NetworkError {
-                presentCustomAlert(message: error.rawValue)
-            } catch {
-                presentDefaultNetworkErrorAlert()
-            }
-        }
-    }
-    
     func setupEmptyStateView() {
-        if allFavorites.count == 0 {
-            self.tableView.isHidden = true
-            self.showEmptyStateView(saying: "Sem favoritos", in: self.view)
+        if allFavorites.isEmpty {
+            DispatchQueue.main.async {
+                self.showEmptyStateView(saying: "Sem favoritos", in: self.view)
+            }
+            
         } else {
-            self.tableView.isHidden = false
-            self.removeEmptyStateView()
+            DispatchQueue.main.async {
+                self.removeEmptyStateView()
+            }
         }
     }
     
@@ -76,11 +66,11 @@ class FavoriteListViewController: UIViewController {
         }
     }
     
-    func presentBusinessInformationViewController() {
-        let targetVC: BusinessInformationViewController = .init(for: business!)
+    func presentBusinessInformationViewController(businessId: String) {
+        let targetVC = BusinessInformationViewController(for: nil, with: businessId)
         targetVC.delegate = self
         
-        let navController: UINavigationController = .init(rootViewController: targetVC)
+        let navController = UINavigationController(rootViewController: targetVC)
         present(navController, animated: true)
     }
 }
@@ -101,12 +91,12 @@ extension FavoriteListViewController: UITableViewDelegate, UITableViewDataSource
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let selectedFavorite = allFavorites[indexPath.row]
-        self.fetchBusinessData(with: selectedFavorite.id!)
+        self.presentBusinessInformationViewController(businessId: selectedFavorite.id!)
     }
     
     func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
         let selectedFavorite = allFavorites[indexPath.row]
-        self.fetchBusinessData(with: selectedFavorite.id!)
+        self.presentBusinessInformationViewController(businessId: selectedFavorite.id!)
     }
 }
 

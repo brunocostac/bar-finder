@@ -217,7 +217,7 @@ extension BusinessListViewController: UISearchControllerDelegate {
 extension BusinessListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let selectedItem = isInSearchMode ? filteredBusinessList[indexPath.item] : businessList[indexPath.item]
-        let targetVC: BusinessInformationViewController = .init(for: selectedItem, near: searchedLocation)
+        let targetVC: BusinessInformationViewController = .init(for: selectedItem, with: nil, near: searchedLocation)
         let navController: UINavigationController = .init(rootViewController: targetVC)
         present(navController, animated: true)
     }
