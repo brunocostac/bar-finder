@@ -36,6 +36,8 @@
 		1193076F299AD39F00C2B6F7 /* BusinessInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1193076E299AD39F00C2B6F7 /* BusinessInformationViewController.swift */; };
 		11930772299AD4DC00C2B6F7 /* FavoriteListCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11930771299AD4DC00C2B6F7 /* FavoriteListCellTableViewCell.swift */; };
 		11930774299AD7E200C2B6F7 /* BFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11930773299AD7E200C2B6F7 /* BFButton.swift */; };
+		119B98AA29DCA5F50079C993 /* MockFavoriteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119B98A929DCA5F50079C993 /* MockFavoriteManager.swift */; };
+		11A0F3B129DB4D0F00360730 /* BusinessInformationViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A0F3B029DB4D0F00360730 /* BusinessInformationViewControllerTests.swift */; };
 		11DB6576299BE84B0066FAE1 /* BusinessMapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB6575299BE84B0066FAE1 /* BusinessMapAnnotation.swift */; };
 		11DB6578299BEF470066FAE1 /* BusinessInformationHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB6577299BEF460066FAE1 /* BusinessInformationHeaderViewController.swift */; };
 		11DB657A299BEFBE0066FAE1 /* BusinessInformationMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB6579299BEFBE0066FAE1 /* BusinessInformationMapViewController.swift */; };
@@ -52,7 +54,6 @@
 		11DB6591299C2C000066FAE1 /* BFAlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB6590299C2C000066FAE1 /* BFAlertContainerView.swift */; };
 		11DB6593299C30550066FAE1 /* BusinessListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB6592299C30550066FAE1 /* BusinessListViewController.swift */; };
 		11EEABA929CD0C8500268ACF /* FavoriteViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EEABA829CD0C8500268ACF /* FavoriteViewControllerTests.swift */; };
-		11EEABB029CD165400268ACF /* MockFavoriteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EEABAF29CD165400268ACF /* MockFavoriteManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,8 @@
 		1193076E299AD39F00C2B6F7 /* BusinessInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessInformationViewController.swift; sourceTree = "<group>"; };
 		11930771299AD4DC00C2B6F7 /* FavoriteListCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListCellTableViewCell.swift; sourceTree = "<group>"; };
 		11930773299AD7E200C2B6F7 /* BFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFButton.swift; sourceTree = "<group>"; };
+		119B98A929DCA5F50079C993 /* MockFavoriteManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockFavoriteManager.swift; path = ../../../../../.Trash/MockFavoriteManager.swift; sourceTree = "<group>"; };
+		11A0F3B029DB4D0F00360730 /* BusinessInformationViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessInformationViewControllerTests.swift; sourceTree = "<group>"; };
 		11DB6575299BE84B0066FAE1 /* BusinessMapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessMapAnnotation.swift; sourceTree = "<group>"; };
 		11DB6577299BEF460066FAE1 /* BusinessInformationHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessInformationHeaderViewController.swift; sourceTree = "<group>"; };
 		11DB6579299BEFBE0066FAE1 /* BusinessInformationMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessInformationMapViewController.swift; sourceTree = "<group>"; };
@@ -116,7 +119,6 @@
 		11DB6590299C2C000066FAE1 /* BFAlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFAlertContainerView.swift; sourceTree = "<group>"; };
 		11DB6592299C30550066FAE1 /* BusinessListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessListViewController.swift; sourceTree = "<group>"; };
 		11EEABA829CD0C8500268ACF /* FavoriteViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewControllerTests.swift; sourceTree = "<group>"; };
-		11EEABAF29CD165400268ACF /* MockFavoriteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFavoriteManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,10 +216,8 @@
 		118FC969299533C800E7A69C /* bar-finderTests */ = {
 			isa = PBXGroup;
 			children = (
-				118FC96A299533C800E7A69C /* FavoriteManagerTests.swift */,
-				118FC98A299540B100E7A69C /* CoreDataTestStack.swift */,
-				11EEABA829CD0C8500268ACF /* FavoriteViewControllerTests.swift */,
-				11EEABAF29CD165400268ACF /* MockFavoriteManager.swift */,
+				11A0F3AF29DB4CD100360730 /* BusinessInformation */,
+				11A0F3AE29DB475600360730 /* Favorite */,
 			);
 			path = "bar-finderTests";
 			sourceTree = "<group>";
@@ -310,6 +310,25 @@
 				115A60D3299EC73400748EDA /* Double.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		11A0F3AE29DB475600360730 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				119B98A929DCA5F50079C993 /* MockFavoriteManager.swift */,
+				118FC98A299540B100E7A69C /* CoreDataTestStack.swift */,
+				11EEABA829CD0C8500268ACF /* FavoriteViewControllerTests.swift */,
+				118FC96A299533C800E7A69C /* FavoriteManagerTests.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		11A0F3AF29DB4CD100360730 /* BusinessInformation */ = {
+			isa = PBXGroup;
+			children = (
+				11A0F3B029DB4D0F00360730 /* BusinessInformationViewControllerTests.swift */,
+			);
+			path = BusinessInformation;
 			sourceTree = "<group>";
 		};
 		11DB657D299BF11B0066FAE1 /* Components */ = {
@@ -469,10 +488,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				119B98AA29DCA5F50079C993 /* MockFavoriteManager.swift in Sources */,
 				118FC96B299533C800E7A69C /* FavoriteManagerTests.swift in Sources */,
-				11EEABB029CD165400268ACF /* MockFavoriteManager.swift in Sources */,
 				11EEABA929CD0C8500268ACF /* FavoriteViewControllerTests.swift in Sources */,
 				118FC98B299540B100E7A69C /* CoreDataTestStack.swift in Sources */,
+				11A0F3B129DB4D0F00360730 /* BusinessInformationViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
