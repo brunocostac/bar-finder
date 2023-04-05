@@ -15,4 +15,4 @@ Aplicativo para dispositivo iOS (Swift) que consome o JSON exposto pela API do Y
 * Arquitetura utilizada: MVC
 * Desenvolvimento de telas com ViewCode
 * Armazenamento local com CoreData
-* Testes unitários (testando a classe FavoriteManager que é usada para gerenciar os dados do banco de dados (CoreData))
+* Testes unitários
