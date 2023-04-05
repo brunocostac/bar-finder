@@ -37,6 +37,45 @@
 		11930772299AD4DC00C2B6F7 /* FavoriteListCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11930771299AD4DC00C2B6F7 /* FavoriteListCellTableViewCell.swift */; };
 		11930774299AD7E200C2B6F7 /* BFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11930773299AD7E200C2B6F7 /* BFButton.swift */; };
 		119B98AA29DCA5F50079C993 /* MockFavoriteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119B98A929DCA5F50079C993 /* MockFavoriteManager.swift */; };
+		119B98BE29DCC3D30079C993 /* SearchViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119B98BD29DCC3D30079C993 /* SearchViewControllerUITests.swift */; };
+		119B98BF29DCCB960079C993 /* BusinessListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB6592299C30550066FAE1 /* BusinessListViewController.swift */; };
+		119B98C029DCCDE50079C993 /* LoadableScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DF919299D0F720076CA24 /* LoadableScreen.swift */; };
+		119B98C129DCCDE80079C993 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FC988299535D600E7A69C /* Business.swift */; };
+		119B98C229DCCE0B0079C993 /* ViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11495059299FE0A800994EAA /* ViewConfiguration.swift */; };
+		119B98C329DCCE7E0079C993 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1193076A299AC17800C2B6F7 /* UIViewController.swift */; };
+		119B98C429DCCE800079C993 /* UIResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1193076C299AC31600C2B6F7 /* UIResponder.swift */; };
+		119B98C529DCCE820079C993 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB6580299C187A0066FAE1 /* UIView.swift */; };
+		119B98C629DCCE850079C993 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB658C299C268D0066FAE1 /* String.swift */; };
+		119B98C729DCCE870079C993 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DF915299D08140076CA24 /* UIHelper.swift */; };
+		119B98C829DCCE8B0079C993 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A60D3299EC73400748EDA /* Double.swift */; };
+		119B98C929DCCE900079C993 /* BFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11930773299AD7E200C2B6F7 /* BFButton.swift */; };
+		119B98CA29DCCE920079C993 /* BFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11930767299AB03700C2B6F7 /* BFTextField.swift */; };
+		119B98CB29DCCE940079C993 /* BFTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11930760299A6B6B00C2B6F7 /* BFTabBar.swift */; };
+		119B98CC29DCCE960079C993 /* BFImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11930765299A7B1A00C2B6F7 /* BFImages.swift */; };
+		119B98CD29DCCEAC0079C993 /* BFLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB657E299BFF8D0066FAE1 /* BFLabel.swift */; };
+		119B98CE29DCCEAE0079C993 /* BFProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB6582299C1A210066FAE1 /* BFProfileImageView.swift */; };
+		119B98CF29DCCEB00079C993 /* BFSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB6586299C1BEB0066FAE1 /* BFSecondaryTitleLabel.swift */; };
+		119B98D029DCCEB20079C993 /* BFAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB658E299C2B1C0066FAE1 /* BFAlert.swift */; };
+		119B98D129DCCEB50079C993 /* BFAlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB6590299C2C000066FAE1 /* BFAlertContainerView.swift */; };
+		119B98D229DCCEB70079C993 /* BFEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DF91D299D12CF0076CA24 /* BFEmptyStateView.swift */; };
+		119B98D329DCCEB90079C993 /* BFPrimaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB6584299C1B6E0066FAE1 /* BFPrimaryTitleLabel.swift */; };
+		119B98D429DCCEBC0079C993 /* BFBusinessImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E35DE29B010F400DFE307 /* BFBusinessImageView.swift */; };
+		119B98D529DCCEC50079C993 /* BusinessMapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB6575299BE84B0066FAE1 /* BusinessMapAnnotation.swift */; };
+		119B98D629DCCEC70079C993 /* BusinessServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DF91B299D10FD0076CA24 /* BusinessServerResponse.swift */; };
+		119B98D729DCCECA0079C993 /* BusinessDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB6588299C24C40066FAE1 /* BusinessDataService.swift */; };
+		119B98D829DCCECD0079C993 /* YelpAPIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB658A299C24F50066FAE1 /* YelpAPIConstants.swift */; };
+		119B98D929DCCECF0079C993 /* ImageDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A60D1299EBE2600748EDA /* ImageDataService.swift */; };
+		119B98DA29DCCED80079C993 /* BusinessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DF917299D0CCB0076CA24 /* BusinessCell.swift */; };
+		119B98DB29DCCEDD0079C993 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FC954299533BE00E7A69C /* SearchViewController.swift */; };
+		119B98DC29DCCEDF0079C993 /* FavoriteListCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11930771299AD4DC00C2B6F7 /* FavoriteListCellTableViewCell.swift */; };
+		119B98DD29DCCEE10079C993 /* FavoriteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11930762299A701400C2B6F7 /* FavoriteListViewController.swift */; };
+		119B98DE29DCCEE30079C993 /* BusinessInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1193076E299AD39F00C2B6F7 /* BusinessInformationViewController.swift */; };
+		119B98DF29DCCEE50079C993 /* BusinessInformationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB657B299BEFDD0066FAE1 /* BusinessInformationDetailsViewController.swift */; };
+		119B98E029DCCEE70079C993 /* BusinessInformationHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB6577299BEF460066FAE1 /* BusinessInformationHeaderViewController.swift */; };
+		119B98E129DCCEE90079C993 /* BusinessInformationMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB6579299BEFBE0066FAE1 /* BusinessInformationMapViewController.swift */; };
+		119B98E229DCCF0A0079C993 /* FavoriteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FC98C2995425E00E7A69C /* FavoriteManager.swift */; };
+		119B98E329DCCF140079C993 /* bar_finder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 118FC959299533BE00E7A69C /* bar_finder.xcdatamodeld */; };
+		119B98E429DCCF450079C993 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FC98F2995452800E7A69C /* CoreDataStack.swift */; };
 		11A0F3B129DB4D0F00360730 /* BusinessInformationViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A0F3B029DB4D0F00360730 /* BusinessInformationViewControllerTests.swift */; };
 		11DB6576299BE84B0066FAE1 /* BusinessMapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB6575299BE84B0066FAE1 /* BusinessMapAnnotation.swift */; };
 		11DB6578299BEF470066FAE1 /* BusinessInformationHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB6577299BEF460066FAE1 /* BusinessInformationHeaderViewController.swift */; };
@@ -58,6 +97,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		118FC967299533C800E7A69C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 118FC945299533BE00E7A69C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 118FC94C299533BE00E7A69C;
+			remoteInfo = "bar-finder";
+		};
+		119B98B729DCC3870079C993 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 118FC945299533BE00E7A69C /* Project object */;
 			proxyType = 1;
@@ -86,8 +132,6 @@
 		118FC961299533C700E7A69C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		118FC966299533C800E7A69C /* bar-finderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bar-finderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		118FC96A299533C800E7A69C /* FavoriteManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteManagerTests.swift; sourceTree = "<group>"; };
-		118FC974299533C900E7A69C /* bar_finderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bar_finderUITests.swift; sourceTree = "<group>"; };
-		118FC976299533C900E7A69C /* bar_finderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bar_finderUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		118FC988299535D600E7A69C /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 		118FC98A299540B100E7A69C /* CoreDataTestStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTestStack.swift; sourceTree = "<group>"; };
 		118FC98C2995425E00E7A69C /* FavoriteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteManager.swift; sourceTree = "<group>"; };
@@ -102,6 +146,8 @@
 		11930771299AD4DC00C2B6F7 /* FavoriteListCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListCellTableViewCell.swift; sourceTree = "<group>"; };
 		11930773299AD7E200C2B6F7 /* BFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFButton.swift; sourceTree = "<group>"; };
 		119B98A929DCA5F50079C993 /* MockFavoriteManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockFavoriteManager.swift; path = ../../../../../.Trash/MockFavoriteManager.swift; sourceTree = "<group>"; };
+		119B98B129DCC3860079C993 /* bar-finderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bar-finderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		119B98BD29DCC3D30079C993 /* SearchViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerUITests.swift; sourceTree = "<group>"; };
 		11A0F3B029DB4D0F00360730 /* BusinessInformationViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessInformationViewControllerTests.swift; sourceTree = "<group>"; };
 		11DB6575299BE84B0066FAE1 /* BusinessMapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessMapAnnotation.swift; sourceTree = "<group>"; };
 		11DB6577299BEF460066FAE1 /* BusinessInformationHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessInformationHeaderViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +176,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		118FC963299533C800E7A69C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		119B98AE29DCC3860079C993 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -179,7 +232,7 @@
 			children = (
 				118FC94F299533BE00E7A69C /* bar-finder */,
 				118FC969299533C800E7A69C /* bar-finderTests */,
-				118FC973299533C900E7A69C /* bar-finderUITests */,
+				119B98B229DCC3870079C993 /* bar-finderUITests */,
 				118FC94E299533BE00E7A69C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -189,6 +242,7 @@
 			children = (
 				118FC94D299533BE00E7A69C /* bar-finder.app */,
 				118FC966299533C800E7A69C /* bar-finderTests.xctest */,
+				119B98B129DCC3860079C993 /* bar-finderUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -220,15 +274,6 @@
 				11A0F3AE29DB475600360730 /* Favorite */,
 			);
 			path = "bar-finderTests";
-			sourceTree = "<group>";
-		};
-		118FC973299533C900E7A69C /* bar-finderUITests */ = {
-			isa = PBXGroup;
-			children = (
-				118FC974299533C900E7A69C /* bar_finderUITests.swift */,
-				118FC976299533C900E7A69C /* bar_finderUITestsLaunchTests.swift */,
-			);
-			path = "bar-finderUITests";
 			sourceTree = "<group>";
 		};
 		118FC9832995344E00E7A69C /* Controllers */ = {
@@ -312,6 +357,14 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		119B98B229DCC3870079C993 /* bar-finderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				119B98BD29DCC3D30079C993 /* SearchViewControllerUITests.swift */,
+			);
+			path = "bar-finderUITests";
+			sourceTree = "<group>";
+		};
 		11A0F3AE29DB475600360730 /* Favorite */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,6 +432,24 @@
 			productReference = 118FC966299533C800E7A69C /* bar-finderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		119B98B029DCC3860079C993 /* bar-finderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 119B98B929DCC3870079C993 /* Build configuration list for PBXNativeTarget "bar-finderUITests" */;
+			buildPhases = (
+				119B98AD29DCC3860079C993 /* Sources */,
+				119B98AE29DCC3860079C993 /* Frameworks */,
+				119B98AF29DCC3860079C993 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				119B98B829DCC3870079C993 /* PBXTargetDependency */,
+			);
+			name = "bar-finderUITests";
+			productName = "bar-finderUITests";
+			productReference = 119B98B129DCC3860079C993 /* bar-finderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -394,6 +465,11 @@
 					};
 					118FC965299533C800E7A69C = {
 						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 118FC94C299533BE00E7A69C;
+					};
+					119B98B029DCC3860079C993 = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 						TestTargetID = 118FC94C299533BE00E7A69C;
 					};
 				};
@@ -413,6 +489,7 @@
 			targets = (
 				118FC94C299533BE00E7A69C /* bar-finder */,
 				118FC965299533C800E7A69C /* bar-finderTests */,
+				119B98B029DCC3860079C993 /* bar-finderUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -428,6 +505,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		118FC964299533C800E7A69C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		119B98AF29DCC3860079C993 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -496,6 +580,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		119B98AD29DCC3860079C993 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				119B98DB29DCCEDD0079C993 /* SearchViewController.swift in Sources */,
+				119B98DA29DCCED80079C993 /* BusinessCell.swift in Sources */,
+				119B98CD29DCCEAC0079C993 /* BFLabel.swift in Sources */,
+				119B98C529DCCE820079C993 /* UIView.swift in Sources */,
+				119B98D029DCCEB20079C993 /* BFAlert.swift in Sources */,
+				119B98BF29DCCB960079C993 /* BusinessListViewController.swift in Sources */,
+				119B98E429DCCF450079C993 /* CoreDataStack.swift in Sources */,
+				119B98D829DCCECD0079C993 /* YelpAPIConstants.swift in Sources */,
+				119B98E329DCCF140079C993 /* bar_finder.xcdatamodeld in Sources */,
+				119B98C129DCCDE80079C993 /* Business.swift in Sources */,
+				119B98E029DCCEE70079C993 /* BusinessInformationHeaderViewController.swift in Sources */,
+				119B98CE29DCCEAE0079C993 /* BFProfileImageView.swift in Sources */,
+				119B98D629DCCEC70079C993 /* BusinessServerResponse.swift in Sources */,
+				119B98C729DCCE870079C993 /* UIHelper.swift in Sources */,
+				119B98CF29DCCEB00079C993 /* BFSecondaryTitleLabel.swift in Sources */,
+				119B98DD29DCCEE10079C993 /* FavoriteListViewController.swift in Sources */,
+				119B98D729DCCECA0079C993 /* BusinessDataService.swift in Sources */,
+				119B98CC29DCCE960079C993 /* BFImages.swift in Sources */,
+				119B98C629DCCE850079C993 /* String.swift in Sources */,
+				119B98E229DCCF0A0079C993 /* FavoriteManager.swift in Sources */,
+				119B98DF29DCCEE50079C993 /* BusinessInformationDetailsViewController.swift in Sources */,
+				119B98C329DCCE7E0079C993 /* UIViewController.swift in Sources */,
+				119B98C029DCCDE50079C993 /* LoadableScreen.swift in Sources */,
+				119B98C429DCCE800079C993 /* UIResponder.swift in Sources */,
+				119B98D429DCCEBC0079C993 /* BFBusinessImageView.swift in Sources */,
+				119B98C229DCCE0B0079C993 /* ViewConfiguration.swift in Sources */,
+				119B98CB29DCCE940079C993 /* BFTabBar.swift in Sources */,
+				119B98DE29DCCEE30079C993 /* BusinessInformationViewController.swift in Sources */,
+				119B98C929DCCE900079C993 /* BFButton.swift in Sources */,
+				119B98C829DCCE8B0079C993 /* Double.swift in Sources */,
+				119B98CA29DCCE920079C993 /* BFTextField.swift in Sources */,
+				119B98E129DCCEE90079C993 /* BusinessInformationMapViewController.swift in Sources */,
+				119B98DC29DCCEDF0079C993 /* FavoriteListCellTableViewCell.swift in Sources */,
+				119B98D529DCCEC50079C993 /* BusinessMapAnnotation.swift in Sources */,
+				119B98D929DCCECF0079C993 /* ImageDataService.swift in Sources */,
+				119B98BE29DCC3D30079C993 /* SearchViewControllerUITests.swift in Sources */,
+				119B98D229DCCEB70079C993 /* BFEmptyStateView.swift in Sources */,
+				119B98D329DCCEB90079C993 /* BFPrimaryTitleLabel.swift in Sources */,
+				119B98D129DCCEB50079C993 /* BFAlertContainerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -503,6 +633,11 @@
 			isa = PBXTargetDependency;
 			target = 118FC94C299533BE00E7A69C /* bar-finder */;
 			targetProxy = 118FC967299533C800E7A69C /* PBXContainerItemProxy */;
+		};
+		119B98B829DCC3870079C993 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 118FC94C299533BE00E7A69C /* bar-finder */;
+			targetProxy = 119B98B729DCC3870079C993 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -732,6 +867,55 @@
 			};
 			name = Release;
 		};
+		119B98BA29DCC3870079C993 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S5RL328K3W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brunocosta.bar-finderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "bar-finder";
+			};
+			name = Debug;
+		};
+		119B98BB29DCC3870079C993 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S5RL328K3W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brunocosta.bar-finderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "bar-finder";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -758,6 +942,15 @@
 			buildConfigurations = (
 				118FC97E299533C900E7A69C /* Debug */,
 				118FC97F299533C900E7A69C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		119B98B929DCC3870079C993 /* Build configuration list for PBXNativeTarget "bar-finderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				119B98BA29DCC3870079C993 /* Debug */,
+				119B98BB29DCC3870079C993 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
