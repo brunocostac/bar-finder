@@ -18,6 +18,7 @@ class FavoriteListViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         title = NSLocalizedString("Favoritos", comment: "")
+        overrideUserInterfaceStyle = .light 
         self.setupTableView()
     }
     
