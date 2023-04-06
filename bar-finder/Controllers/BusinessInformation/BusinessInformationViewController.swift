@@ -16,13 +16,7 @@ class BusinessInformationViewController: UIViewController, LoadableScreen {
     
     var containerView: UIView!
  
-    var business: Business! {
-        didSet {
-            title = business.name
-            self.setupChildControllers()
-            self.checkIsFavorite(business: self.business)
-        }
-    }
+    var business: Business!
     private var searchedLocation: String = .init()
 
     var scrollView: UIScrollView = .init()
@@ -45,6 +39,7 @@ class BusinessInformationViewController: UIViewController, LoadableScreen {
         
         if business != nil {
             self.business = business
+            self.configureBusinessDetails()
         } else {
             self.fetchBusinessData(with: id!)
         }
@@ -60,12 +55,19 @@ class BusinessInformationViewController: UIViewController, LoadableScreen {
         Task {
             do {
                 self.business = try await BusinessDataService.shared.fetchData(with: id)
+                self.configureBusinessDetails()
             } catch let error as BusinessDataService.NetworkError {
                 presentCustomAlert(message: error.rawValue)
             } catch {
                 presentDefaultNetworkErrorAlert()
             }
         }
+    }
+    
+    func configureBusinessDetails() {
+        title = business?.name
+        self.setupChildControllers()
+        self.checkIsFavorite(business: self.business)
     }
     
     override func viewDidLoad() {
@@ -113,10 +115,7 @@ class BusinessInformationViewController: UIViewController, LoadableScreen {
             FavoriteManager().remove(withId: business.id)
             self.isFavorite = false
         }
-        
-        DispatchQueue.main.async {
-            self.favBarBtn.image = UIImage(systemName: self.isFavorite ? "star.fill" : "star")
-        }
+        self.updateFavoriteBarButtonImage()
     }
     
     func checkIsFavorite(business: Business) {
@@ -125,6 +124,14 @@ class BusinessInformationViewController: UIViewController, LoadableScreen {
             self.isFavorite = false
         } else {
             self.isFavorite = true
+        }
+        
+        self.updateFavoriteBarButtonImage()
+    }
+    
+    func updateFavoriteBarButtonImage() {
+        DispatchQueue.main.async {
+            self.favBarBtn.image = UIImage(systemName: self.isFavorite ? "star.fill" : "star")
         }
     }
 }
