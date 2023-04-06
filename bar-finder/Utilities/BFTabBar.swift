@@ -16,9 +16,9 @@ class BFTabBar: UITabBarController {
         
     private func createSearchNavigationController() -> UINavigationController {
         let searchVC = SearchViewController()
-        searchVC.title = NSLocalizedString("Buscar", comment: "The title of Buscar view controller")
-        searchVC.tabBarItem = UITabBarItem(title: "Buscar", image: UIImage(systemName: "magnifyingglass"), tag: 0)
-        searchVC.tabBarItem.title = "Buscar"
+        searchVC.title = NSLocalizedString("Início", comment: "The title of Início view controller")
+        searchVC.tabBarItem = UITabBarItem(title: "Início", image: UIImage(systemName: "house"), tag: 0)
+        searchVC.tabBarItem.title = "Início"
         return UINavigationController(rootViewController: searchVC)
     }
     

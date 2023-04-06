@@ -9,11 +9,11 @@ import UIKit
 
 class SearchViewController: UIViewController {
     
-    private let logoImageView: UIImageView = .init()
+    let logoImageView: UIImageView = .init()
     
-    private let locationTextField: BFTextField = .init(withPlaceholder: "Qual é a sua localização?", imagePlaceHolder: BFImages.location)
-    private let businessTypeTextField: BFTextField = .init(withPlaceholder: "Pizza, cerveja, hamburger...", imagePlaceHolder: BFImages.businessType)
-    private let searchButton: BFButton = .init(withTitle: "Buscar")
+    let locationTextField: BFTextField = .init(withPlaceholder: "Qual é a sua localização?", imagePlaceHolder: BFImages.location)
+    let businessTypeTextField: BFTextField = .init(withPlaceholder: "Pizza, cerveja, hamburger...", imagePlaceHolder: BFImages.businessType)
+    let searchButton: BFButton = .init(withTitle: "Buscar")
     
     private var isLocationEntered: Bool { !locationTextField.text!.isEmpty }
     private var isBusinessTypeEntered: Bool { !businessTypeTextField.text!.isEmpty }
@@ -32,12 +32,11 @@ class SearchViewController: UIViewController {
     }
     
     
-    
     func setupLogoViewConstraints() {
         logoImageView.translatesAutoresizingMaskIntoConstraints = false
     
         NSLayoutConstraint.activate([
-            logoImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 60),
+            logoImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0),
             logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             logoImageView.widthAnchor.constraint(equalToConstant: 300),
             logoImageView.heightAnchor.constraint(equalToConstant: 300)
@@ -66,9 +65,9 @@ class SearchViewController: UIViewController {
         searchButton.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
+            searchButton.topAnchor.constraint(equalTo: businessTypeTextField.bottomAnchor, constant: 32),
             searchButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 32),
             searchButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -32),
-            searchButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -48),
             searchButton.heightAnchor.constraint(equalToConstant: 44)
         ])
     }

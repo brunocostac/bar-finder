@@ -36,8 +36,6 @@
 		1193076F299AD39F00C2B6F7 /* BusinessInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1193076E299AD39F00C2B6F7 /* BusinessInformationViewController.swift */; };
 		11930772299AD4DC00C2B6F7 /* FavoriteListCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11930771299AD4DC00C2B6F7 /* FavoriteListCellTableViewCell.swift */; };
 		11930774299AD7E200C2B6F7 /* BFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11930773299AD7E200C2B6F7 /* BFButton.swift */; };
-		119B98AA29DCA5F50079C993 /* MockFavoriteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119B98A929DCA5F50079C993 /* MockFavoriteManager.swift */; };
-		119B98BE29DCC3D30079C993 /* SearchViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119B98BD29DCC3D30079C993 /* SearchViewControllerUITests.swift */; };
 		119B98BF29DCCB960079C993 /* BusinessListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB6592299C30550066FAE1 /* BusinessListViewController.swift */; };
 		119B98C029DCCDE50079C993 /* LoadableScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DF919299D0F720076CA24 /* LoadableScreen.swift */; };
 		119B98C129DCCDE80079C993 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FC988299535D600E7A69C /* Business.swift */; };
@@ -77,6 +75,9 @@
 		119B98E329DCCF140079C993 /* bar_finder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 118FC959299533BE00E7A69C /* bar_finder.xcdatamodeld */; };
 		119B98E429DCCF450079C993 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FC98F2995452800E7A69C /* CoreDataStack.swift */; };
 		11A0F3B129DB4D0F00360730 /* BusinessInformationViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A0F3B029DB4D0F00360730 /* BusinessInformationViewControllerTests.swift */; };
+		11A58E1729DEFD9700F830A9 /* SearchViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A58E1629DEFD9700F830A9 /* SearchViewControllerUITests.swift */; };
+		11A58E1929DF025D00F830A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 118FC95C299533C700E7A69C /* Assets.xcassets */; };
+		11A58E1C29DF03FC00F830A9 /* MockFavoriteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A58E1B29DF03FC00F830A9 /* MockFavoriteManager.swift */; };
 		11DB6576299BE84B0066FAE1 /* BusinessMapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB6575299BE84B0066FAE1 /* BusinessMapAnnotation.swift */; };
 		11DB6578299BEF470066FAE1 /* BusinessInformationHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB6577299BEF460066FAE1 /* BusinessInformationHeaderViewController.swift */; };
 		11DB657A299BEFBE0066FAE1 /* BusinessInformationMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB6579299BEFBE0066FAE1 /* BusinessInformationMapViewController.swift */; };
@@ -145,10 +146,10 @@
 		1193076E299AD39F00C2B6F7 /* BusinessInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessInformationViewController.swift; sourceTree = "<group>"; };
 		11930771299AD4DC00C2B6F7 /* FavoriteListCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListCellTableViewCell.swift; sourceTree = "<group>"; };
 		11930773299AD7E200C2B6F7 /* BFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFButton.swift; sourceTree = "<group>"; };
-		119B98A929DCA5F50079C993 /* MockFavoriteManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockFavoriteManager.swift; path = ../../../../../.Trash/MockFavoriteManager.swift; sourceTree = "<group>"; };
 		119B98B129DCC3860079C993 /* bar-finderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bar-finderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		119B98BD29DCC3D30079C993 /* SearchViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerUITests.swift; sourceTree = "<group>"; };
 		11A0F3B029DB4D0F00360730 /* BusinessInformationViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessInformationViewControllerTests.swift; sourceTree = "<group>"; };
+		11A58E1629DEFD9700F830A9 /* SearchViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerUITests.swift; sourceTree = "<group>"; };
+		11A58E1B29DF03FC00F830A9 /* MockFavoriteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFavoriteManager.swift; sourceTree = "<group>"; };
 		11DB6575299BE84B0066FAE1 /* BusinessMapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessMapAnnotation.swift; sourceTree = "<group>"; };
 		11DB6577299BEF460066FAE1 /* BusinessInformationHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessInformationHeaderViewController.swift; sourceTree = "<group>"; };
 		11DB6579299BEFBE0066FAE1 /* BusinessInformationMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessInformationMapViewController.swift; sourceTree = "<group>"; };
@@ -360,7 +361,7 @@
 		119B98B229DCC3870079C993 /* bar-finderUITests */ = {
 			isa = PBXGroup;
 			children = (
-				119B98BD29DCC3D30079C993 /* SearchViewControllerUITests.swift */,
+				11A58E1829DEFDA000F830A9 /* Search */,
 			);
 			path = "bar-finderUITests";
 			sourceTree = "<group>";
@@ -368,10 +369,10 @@
 		11A0F3AE29DB475600360730 /* Favorite */ = {
 			isa = PBXGroup;
 			children = (
-				119B98A929DCA5F50079C993 /* MockFavoriteManager.swift */,
 				118FC98A299540B100E7A69C /* CoreDataTestStack.swift */,
 				11EEABA829CD0C8500268ACF /* FavoriteViewControllerTests.swift */,
 				118FC96A299533C800E7A69C /* FavoriteManagerTests.swift */,
+				11A58E1B29DF03FC00F830A9 /* MockFavoriteManager.swift */,
 			);
 			path = Favorite;
 			sourceTree = "<group>";
@@ -382,6 +383,14 @@
 				11A0F3B029DB4D0F00360730 /* BusinessInformationViewControllerTests.swift */,
 			);
 			path = BusinessInformation;
+			sourceTree = "<group>";
+		};
+		11A58E1829DEFDA000F830A9 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				11A58E1629DEFD9700F830A9 /* SearchViewControllerUITests.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		11DB657D299BF11B0066FAE1 /* Components */ = {
@@ -515,6 +524,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11A58E1929DF025D00F830A9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,7 +582,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				119B98AA29DCA5F50079C993 /* MockFavoriteManager.swift in Sources */,
+				11A58E1C29DF03FC00F830A9 /* MockFavoriteManager.swift in Sources */,
 				118FC96B299533C800E7A69C /* FavoriteManagerTests.swift in Sources */,
 				11EEABA929CD0C8500268ACF /* FavoriteViewControllerTests.swift in Sources */,
 				118FC98B299540B100E7A69C /* CoreDataTestStack.swift in Sources */,
@@ -591,6 +601,7 @@
 				119B98D029DCCEB20079C993 /* BFAlert.swift in Sources */,
 				119B98BF29DCCB960079C993 /* BusinessListViewController.swift in Sources */,
 				119B98E429DCCF450079C993 /* CoreDataStack.swift in Sources */,
+				11A58E1729DEFD9700F830A9 /* SearchViewControllerUITests.swift in Sources */,
 				119B98D829DCCECD0079C993 /* YelpAPIConstants.swift in Sources */,
 				119B98E329DCCF140079C993 /* bar_finder.xcdatamodeld in Sources */,
 				119B98C129DCCDE80079C993 /* Business.swift in Sources */,
@@ -619,7 +630,6 @@
 				119B98DC29DCCEDF0079C993 /* FavoriteListCellTableViewCell.swift in Sources */,
 				119B98D529DCCEC50079C993 /* BusinessMapAnnotation.swift in Sources */,
 				119B98D929DCCECF0079C993 /* ImageDataService.swift in Sources */,
-				119B98BE29DCC3D30079C993 /* SearchViewControllerUITests.swift in Sources */,
 				119B98D229DCCEB70079C993 /* BFEmptyStateView.swift in Sources */,
 				119B98D329DCCEB90079C993 /* BFPrimaryTitleLabel.swift in Sources */,
 				119B98D129DCCEB50079C993 /* BFAlertContainerView.swift in Sources */,
