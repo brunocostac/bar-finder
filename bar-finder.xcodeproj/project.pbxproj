@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		110E35DF29B010F400DFE307 /* BFBusinessImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E35DE29B010F400DFE307 /* BFBusinessImageView.swift */; };
+		1128EA2129E5883900B3D154 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1128EA2029E5883900B3D154 /* UITableView.swift */; };
 		1149505A299FE0A800994EAA /* ViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11495059299FE0A800994EAA /* ViewConfiguration.swift */; };
 		115A60D2299EBE2600748EDA /* ImageDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A60D1299EBE2600748EDA /* ImageDataService.swift */; };
 		115A60D4299EC73400748EDA /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A60D3299EC73400748EDA /* Double.swift */; };
@@ -115,6 +116,7 @@
 
 /* Begin PBXFileReference section */
 		110E35DE29B010F400DFE307 /* BFBusinessImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFBusinessImageView.swift; sourceTree = "<group>"; };
+		1128EA2029E5883900B3D154 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		11495059299FE0A800994EAA /* ViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfiguration.swift; sourceTree = "<group>"; };
 		115A60D1299EBE2600748EDA /* ImageDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataService.swift; sourceTree = "<group>"; };
 		115A60D3299EC73400748EDA /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
@@ -354,6 +356,7 @@
 				117DF915299D08140076CA24 /* UIHelper.swift */,
 				117DF919299D0F720076CA24 /* LoadableScreen.swift */,
 				115A60D3299EC73400748EDA /* Double.swift */,
+				1128EA2029E5883900B3D154 /* UITableView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -574,6 +577,7 @@
 				11DB657F299BFF8D0066FAE1 /* BFLabel.swift in Sources */,
 				11930766299A7B1A00C2B6F7 /* BFImages.swift in Sources */,
 				110E35DF29B010F400DFE307 /* BFBusinessImageView.swift in Sources */,
+				1128EA2129E5883900B3D154 /* UITableView.swift in Sources */,
 				1193076F299AD39F00C2B6F7 /* BusinessInformationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

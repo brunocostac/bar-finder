@@ -33,6 +33,6 @@ extension BFPrimaryTitleLabel: ViewConfiguration {
     
     func configureViews() {
         disableAutoresizingMaskTranslation()
-        textColor = .black
+        textColor = .darkGray
     }
 }
