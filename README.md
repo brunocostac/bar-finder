@@ -23,5 +23,5 @@ Aplicativo para dispositivo iOS (Swift) que consome o JSON exposto pela API do Y
 | --- | --- | --- |
 
 | ![Imagem 1](https://github.com/brunocostac/bar-finder/blob/main/screenshots/Apple%20iPhone%2011%20Pro%20Max%20Screenshot%203.png) | 
-| --- | --- | --- |
+
 
